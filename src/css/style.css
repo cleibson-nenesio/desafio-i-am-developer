@@ -1,0 +1,96 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Winner Sans';
+    src: url('../fonts/sportsfonts-winner-sans-cond-regular.otf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 790px;
+    position: relative;
+}
+
+.testemonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 0;
+}
+
+.testemonial-container h2 {
+    font-family: 'Winner Sans', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    top: 40px;
+    left: 330px;
+    letter-spacing: 6px;
+    color: #11163b;
+}
+
+.testemonial-container h2::after {
+    content: "";
+    position: absolute;
+    background-color: #00569A;
+    width: 45px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testemonial-container .quote-icon {
+    font-size: 6rem;
+    color: #00569A;
+    margin-bottom: 15px;
+}
+
+.testemonial-container p {
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.testemonial-container span {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #00569A;
+    font-weight: bold;
+}
+
+.testemonial-container .btn-container {
+    text-align: center;
+}
+
+.testemonial-container .btn {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    border: none;
+    background-color: #b9bec2;
+    color: white;
+    border-radius: 50%;
+}
+
+.testemonial-container .btn.next {
+    background-color: #00569A;
+    cursor: pointer;
+}
+
+.icon-previous {
+    transform: rotate(-90deg);
+}
+
+.icon-next {
+    transform: rotate(90deg);
+}
